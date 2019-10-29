@@ -16,7 +16,7 @@ Prediction_only
 └── misc_functions.py
 ```
 
-The **Prediction_only** folder contains three files, *Image_preprocessing.py*, *Visualization.py*, and *misc_functions.py*, along with five subfolders, **Step01_raw_channels**, **Step02_channel_combined_input**, **deep_learning_model**, **model_weights** and **results**.
+The **Prediction_only** folder contains three files, __Image_preprocessing.py__, __Visualization.py__, and _misc_functions.py_, along with five subfolders, **Step01_raw_channels**, **Step02_channel_combined_input**, **deep_learning_model**, **model_weights** and **results**.
 
 In **Prediction_only**, users can directly apply the off-the-shelf (or more technically speaking, pre-trained) deep learning models on their own data to generate segmentation predictions. 
 
