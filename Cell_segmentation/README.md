@@ -1,4 +1,4 @@
-# Cell_Segmentation_and_Tracking/Cell_Segmentation
+## Cell_Segmentation_and_Tracking/Cell_Segmentation
 *By Nanyan "Rosalie" Zhu and Chen "Raphael" Liu, 2019*
 
 The ability to extrapolate gene expression dynamics in living single cells requires robust cell segmentation, and one of the challenges is the amorphous or irregularly shaped cell boundaries. To address this issue, we modified the U-Net architecture to segment cells in fluorescence widefield microscopy images and quantitatively evaluated its performance.
