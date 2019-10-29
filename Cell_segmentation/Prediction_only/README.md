@@ -28,4 +28,4 @@ Once the user run this *Visualization.py*, two things will happen:
     - Postprocessing (adjacent cell cleaning, etc.) is performed on the segmentation predictions and stored under **Prediction_only/result/*DLModelType*/postprocessed_png/*something*/**.
 
 
-Important Note: the raw input images need to conform to the size constraints. Currently, they need to be 4792$\times$3200 or otherwise the deep learning model cannot work with them.
+Important Note: the raw input images need to conform to the size constraints. Currently, they need to be 4792 by 3200 or otherwise the deep learning model cannot work with them.
