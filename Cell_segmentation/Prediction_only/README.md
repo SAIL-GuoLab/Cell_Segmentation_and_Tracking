@@ -23,6 +23,7 @@ The **Prediction_only** folder contains three files, *Image_preprocessing.py*, *
 - [*Visualization.py*](https://github.com/SAIL-GuoLab/Cell_Segmentation_and_Tracking/blob/master/Cell_segmentation/Prediction_only/Visualization.py) is a python file to run the deep learning segmentation. Before running this, the user should have already completed three steps.
     - run [*Image_preprocessing.py*](https://github.com/SAIL-GuoLab/Cell_Segmentation_and_Tracking/blob/master/Cell_segmentation/Prediction_only/Image_preprocessing.py) to generate the channel-combined RGB image(s) (which can be used as a valid input to the deep learning model).
     - migrate (or, more preferrably, copy) the RGB image(s) from the **Step01_raw_channels/*something*/Combined3Channels/** subfolder to the **Step02_channel_combined_input/*project_name*/**. The **Step02_channel_combined_input/demo/** is the default prediction path in the next step.
+
 Once the user run this *Visualization.py*, two things will happen:
     - Segmentation predictions from the deep learning model will be generated and stored under **Prediction_only/result/*DLModelType*/predictions**.
     - Postprocessing (adjacent cell cleaning, etc.) is performed on the segmentation predictions and stored under **Prediction_only/result/*DLModelType*/postprocessed_png/*something*/**.
