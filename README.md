@@ -26,4 +26,5 @@ Cell_Segmentation_and_Tracking
 The **Cell_Segmentation_and_Tracking** repository contrains two folders, **Cell_Segmentation** and **Cell_Tracking**. These two folders are very much self-explanatory. Descriptions about their respective contents are described in the documentation files within each of them.
 
 *Note 1: We did not include the "pycache" folders because they can be ignored practically.
+
 *Note 2: We did not include the ".gitattribute" files and "README.md" files in the hierarchy tree. The former are utilized by the git large file storage (git-lfs) while the latter are the documentations, just like the one you are reading right now.
