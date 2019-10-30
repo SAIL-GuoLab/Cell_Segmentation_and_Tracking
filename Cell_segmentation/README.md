@@ -25,3 +25,4 @@ The **Cell_Segmentation** folder contains two subfolders, **Prediction_only** an
 - In **Prediction_only**, users can directly apply the off-the-shelf (or more technically speaking, pre-trained) deep learning models on their own data to generate segmentation predictions. 
 
 - In **Train_n_Testing**, users can train their own deep learning model and, if done properly, obtain a version best suits their own data.
+![](https://github.com/SAIL-GuoLab/Cell_Segmentation_and_Tracking/blob/master/Cell_segmentation/figures/pipeline.png)
