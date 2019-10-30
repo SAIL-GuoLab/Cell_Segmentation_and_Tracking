@@ -16,6 +16,10 @@ Prediction_only
 └── misc_functions.py
 ```
 ![](https://github.com/SAIL-GuoLab/Cell_Segmentation_and_Tracking/blob/master/Cell_segmentation/figures/prediction_flowchart.png)
+
+
+
+## Note
 The **Prediction_only** folder contains two main files, *Image_preprocessing.py* and *Visualization.py*, along with five subfolders and a supplimentary function file, **Step01_raw_channels**, **Step02_channel_combined_input**, **deep_learning_model**, **model_weights** and **results**.
 
 - **STEP 1:** [*Image_preprocessing.py*](https://github.com/SAIL-GuoLab/Cell_Segmentation_and_Tracking/blob/master/Cell_segmentation/Prediction_only/Image_preprocessing.py) is a python file for image preprocessing. It takes in the raw input channel as three pseudo-color channels (R: Nucleus, G: Cytoplasm, B: DIC) and, after a series of image processing steps, generates a channel-concatenated RGB output. The raw input channels, each as individual ".tif" images, shall be placed in the subfolders under the folder **Step01_raw_channels**. An example is shown in **Step01_raw_channels/A1**. The subfolder **A1** stands for the name of the well in which the cells were raised. The three raw input images, *A1_w1594_T01.tif*, *A1_w4Cy5_T01.tif* and *A1_DIC_T01.tif*, respectively stands for the Cytoplasm, Nucleus and DIC channel. The generated channel-combined RGB image, *A1_Combined_T01.png*, is automatically stored in the folder **Step01_raw_channels/A1/Combined3Channels/**.
