@@ -1,6 +1,8 @@
 # Cell Segmentation and Tracking
 *By Nanyan "Rosalie" Zhu and Chen "Raphael" Liu, 2019*
 
+## Please cite [our paper](https://arxiv.org/pdf/2001.05548.pdf).
+
 The purpose of this repository is to design and implement a tool to quantify the cellular behaviors at the single-cell level. We decided to approach this challenge by dissecting it into two stages: cell segmentation and cell tracking. The quantification of cellular properties/behaviors is a natural outcome as the cell tracking stage is complete.
 
 ## Repository Hierarchy
