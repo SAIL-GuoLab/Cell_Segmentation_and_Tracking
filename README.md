@@ -1,5 +1,5 @@
 # Cell Segmentation and Tracking
-*By Nanyan "Rosalie" Zhu and Chen "Raphael" Liu, 2019*
+*By Nanyan "Rosalie" Zhu and Chen "Raphael" Liu, Columbia University, 2019*
 
 #### Please cite [our paper](https://arxiv.org/pdf/2001.05548.pdf) if you find this useful.
 
