@@ -7,35 +7,16 @@ Created on Sat Oct 26 12:19:50 2019
 """
 
 import os
-import cv2
-import random
-import datetime as dt
 import numpy as np
-import pandas as pd
 from glob import glob
 
 import matplotlib.pyplot as plt
-import matplotlib.pylab as plb
-from matplotlib import colors
 
-from scipy import interpolate
 import scipy.ndimage as ndi
-import scipy.ndimage.filters as scifilters
-import scipy.ndimage.morphology as ndi_morph
 
 import skimage.exposure as exposure
-import skimage.feature as feature
-import skimage.filters as filters
-import skimage.morphology as skimage_morph
-import skimage.segmentation as seg
-from skimage import measure, data, img_as_float, color, feature
 
-import math
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
-from torch.nn.modules.utils import _pair, _quadruple
-from misc_functions import plot_img, plot_img_and_hist, rescaling, find_sub_list, printProgressBar
+from misc_functions import plot_img, rescaling, find_sub_list, printProgressBar
 
 # dataset path is the raw data path that contains images for 3 channels (in our case DIC, Neucleus and Cytoplasm)
 dataset_path = './raw/'
@@ -84,9 +65,9 @@ for folder in folder_list:
         # DIC 
         DIC_img = plt.imread(DIC_sublist[time_idx])
         DIC_filtered = ndi.gaussian_filter(DIC_img, 25)
-        DIC_corrected_img = img/filtered
+        DIC_corrected_img = DIC_img/DIC_filtered
         DIC_range_corrected = np.uint16(exposure.rescale_intensity(corrected_img, out_range = (0, 2**16-1)))
-        DIC_filtered_rescaled = rescaling(range_corrected, 0.001, 0.999)
+        DIC_filtered_rescaled = rescaling(DIC_range_corrected, 0.001, 0.999)
 
         # Combined
         combined = np.concatenate((nucleus_filtered_rescaled[..., np.newaxis], cyto_filtered_rescaled[..., np.newaxis], DIC_filtered_rescaled[..., np.newaxis]), axis = -1) / (2 ** 16 - 1) 
